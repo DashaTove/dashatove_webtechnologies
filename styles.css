@@ -1,0 +1,78 @@
+body {
+    background-color: #dbeaec;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    text-align: center;
+}
+
+.avatar {
+    width: 200px;
+}
+
+.header_title {
+    font-size: 28px;
+}
+.header_subtitle {
+    color: rgb(49, 114, 133);
+}
+
+main {
+    text-align: center;
+}
+
+
+.separator {
+    width: 90%;
+    height: 1px;
+    background-color:rgb(49, 114, 133);
+}
+
+
+.class_interaction {
+    display: block;
+    margin: 0 auto;
+}
+
+.project_0 {
+    background-color: cadetblue;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.project_1 {
+    background-color: cadetblue;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.project_2 {
+    background-color: cadetblue;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.project_3 {
+    background-color: cadetblue;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.project_4 {
+    background-color: cadetblue;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+
+footer {
+    height: 100px;
+    text-align: center;
+    background-color: rgb(186, 206, 208);
+}
+
+.contacts_link {
+    text-decoration: none;
+    color: black;
+}
