@@ -67,7 +67,7 @@ main {
 
 
 footer {
-    height: 100px;
+    height: 80px;
     text-align: center;
     background-color: rgb(186, 206, 208);
 }
@@ -75,4 +75,5 @@ footer {
 .contacts_link {
     text-decoration: none;
     color: black;
+
 }
