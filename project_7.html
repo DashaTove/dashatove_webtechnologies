@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Текущая дата</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffd6ec;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #9b5c8f;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 140px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #6c757d;
+            margin-bottom: 40px;
+        }
+
+        .date-box {
+            display: column;
+            min-width: 300px;
+            padding: 25px 40px;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #9b5c8f;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .btn {
+            padding: 15px 40px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            background-color: #9b5c8f;
+            color: #ffffff;
+        }
+
+        .btn:hover {
+            background-color: #7f4a75;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#">WEB-T by Shegidevich Darya</a>
+        <a href="web_t.html">Home</a>
+    </div>
+
+    <div class="container">
+        <h1>Какой сегодня день?</h1>
+        <div class="subtitle">Нажмите кнопку, чтобы узнать текущую дату</div>
+
+        <div id="date" class="date-box"></div>
+
+        <button class="btn" onclick="showDate()">
+            Узнать сегодняшнюю дату
+        </button>
+    </div>
+
+    <script>
+        function showDate() {
+            const dateBox = document.getElementById('date');
+
+            const today = new Date();
+
+            const days = [
+                'Воскресенье',
+                'Понедельник',
+                'Вторник',
+                'Среда',
+                'Четверг',
+                'Пятница',
+                'Суббота'
+            ];
+
+            const months = [
+                'января',
+                'февраля',
+                'марта',
+                'апреля',
+                'мая',
+                'июня',
+                'июля',
+                'августа',
+                'сентября',
+                'октября',
+                'ноября',
+                'декабря'
+            ];
+
+            const dayName = days[today.getDay()];
+            const day = today.getDate();
+            const month = months[today.getMonth()];
+            const year = today.getFullYear();
+
+            dateBox.textContent = `${dayName}, ${day} ${month} ${year} года`;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISD by Shegidevich Darya</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffd6ec;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Header */
+        .header {
+            background-color: #9b5c8f;
+            padding: 40px 20px;
+            color: #ffffff;
+        }
+
+        .avatar {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 4px solid #ffffff;
+        }
+
+        .header_title_web {
+            margin: 10px 0 0;
+            font-size: 26px;
+            font-weight: normal;
+        }
+
+        .header_subtitle_web {
+            margin: 5px 0 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .isd {
+            padding: 12px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ffffff;
+            color: #9b5c8f;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .isd:hover {
+            background-color: #f2e6ef;
+            transform: translateY(-2px);
+        }
+
+        /* Separator */
+        .separator_web {
+            border: none;
+            height: 2px;
+            background-color: #9b5c8f;
+            margin: 40px auto;
+            width: 80%;
+        }
+
+        /* Projects */
+        .interaction_web {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .interaction_web button {
+            padding: 15px 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            background-color: #9b5c8f;
+            color: #ffffff;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .interaction_web button:hover {
+            background-color: #7f4a75;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            padding: 30px 0;
+        }
+
+        .contacts_link {
+            color: #9b5c8f;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contacts_link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="assets/IMG_5157%20(1).JPG" alt="my photo" class="avatar">
+        <h1 class="header_title_web">Web-T by</h1>
+        <h2 class="header_subtitle_web">Shegidevich Darya 252</h2>
+        <a href="index.html">
+            <button type="button" class="isd">ISD</button>
+        </a>
+    </header>
+
+    <main>
+        <hr class="separator_web">
+
+        <section class="interaction_web">
+            <a href="project_1.html"><button type="button">Project 1</button></a>
+            <a href="project_2.html"><button type="button">Project 2</button></a>
+            <a href="project_3.html"><button type="button">Project 3</button></a>
+            <a href="project_4.html"><button type="button">Project 4</button></a>
+            <a href="project_5.html"><button type="button">Project 5</button></a>
+            <a href="project_6.html"><button type="button">Project 6</button></a>
+            <a href="project_7.html"><button type="button">Project 7</button></a>
+            <a href="project_8.html"><button type="button">Project 8</button></a>
+            <a href="project_9.html"><button type="button">Project 9</button></a>
+        </section>
+    </main>
+
+    <hr class="separator_web">
+
+    <footer>
+        <address>
+            <a href="tel:+375293188511" class="contacts_link">
+                +375 (29) 318-85-11
+            </a>
+        </address>
+    </footer>
+
+</body>
+</html>

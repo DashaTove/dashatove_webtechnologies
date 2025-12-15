@@ -1,46 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>ISD by Shegidevich Darya</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #eef0ff;
+            color: #1c1c3a;
+        }
+
+        /* Header */
+        .header {
+            background-color: #6f7a9c;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .avatar {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 4px solid #1c1c3a;
+        }
+
+        .header_title {
+            margin: 10px 0 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .header_subtitle {
+            margin: 5px 0;
+            font-size: 22px;
+            font-weight: 500;
+                        font-weight: bold;
+        }
+
+        .header_topic {
+            margin: 15px auto 25px;
+            max-width: 900px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        .web_t {
+            padding: 10px 30px;
+            font-size: 16px;
+            background-color: #0b0d3d;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        /* Separator */
+        .separator {
+            border: none;
+            height: 2px;
+            background-color: #0b0d3d;
+            margin: 40px auto;
+            width: 90%;
+        }
+
+        /* Navigation buttons */
+        .interaction {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 15px;
+            max-width: 900px;
+            margin: 0 auto 40px;
+            padding: 0 20px;
+        }
+
+        .interaction button {
+            padding: 12px;
+            font-size: 15px;
+            background-color: #0b0d3d;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .interaction button:hover {
+            background-color: #1a1f6b;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .contacts_link {
+            color: #0b0d3d;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
 </head>
+
 <body>
-    <header class="header">
-        <img src="assets/IMG_5157%20(1).JPG" alt="my photo" class="avatar">
-        <h1 class="header_title"> ISD by </h1>
-        <h2 class="header_subtitle"> Shegidevich Darya 252 </h2>
-        <h3 class="header_topic">Тема: Проектирование информационного ресурса для компании аренды коммерческой недвижимости</h3>
-    </header>
 
-    <main>
-        <hr class="separator">
+<header class="header">
+    <img src="assets/IMG_5157%20(1).JPG" alt="my photo" class="avatar">
+    <h1 class="header_title">ISD by</h1>
+    <h2 class="header_subtitle">Shegidevich Darya 252</h2>
+    <h3 class="header_topic">
+        Тема: Проектирование информационного ресурса для компании аренды коммерческой недвижимости
+    </h3>
+    <a href="web_t.html">
+        <button class="web_t">Web-T</button>
+    </a>
+</header>
 
-    <section class="interaction">
-        <a href="project1.html"><button type="button" class="project_1">Project 1</button></a>
-        <a href="project2.html"><button type="button" class="project_2">Project 2</button></a>
-        <a href="project3.html"><button type="button" class="project_3">Project 3</button></a>
-        <a href="project4.html"><button type="button" class="project_4">Project 4</button></a>
-        <a href="project5.html"><button type="button" class="project_5">Project 5</button></a>
-        <a href="project6.html"><button type="button" class="project_6">Project 6</button></a>
-        <a href="project7.html"><button type="button" class="project_7">Project 7</button></a>
-        <a href="project8.html"><button type="button" class="project_8">Project 8</button></a>
-        <a href="project9.html"><button type="button" class="project_9">Project 9</button></a>
-    </section>
-
-    </main>
-
+<main>
     <hr class="separator">
 
-    <footer>
-        <address>
-            <br>
-            <a href="tel:+375293188511"  class="contacts_link">+375293188511</a>
-        </address>
-    </footer>
-</body>
+    <section class="interaction">
+        <a href="project1.html"><button>Project 1</button></a>
+        <a href="project2.html"><button>Project 2</button></a>
+        <a href="project3.html"><button>Project 3</button></a>
+        <a href="project4.html"><button>Project 4</button></a>
+        <a href="project5.html"><button>Project 5</button></a>
+        <a href="project6.html"><button>Project 6</button></a>
+        <a href="project7.html"><button>Project 7</button></a>
+        <a href="project8.html"><button>Project 8</button></a>
+        <a href="project9.html"><button>Project 9</button></a>
+    </section>
+</main>
 
+<hr class="separator">
+
+<footer>
+    <address>
+        <a href="tel:+375293188511" class="contacts_link">
+            +375293188511
+        </a>
+    </address>
+</footer>
+
+</body>
 </html>
 
 

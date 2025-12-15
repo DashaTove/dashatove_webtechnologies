@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>User IP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffd6ec;
+            color: #333;
+        }
+
+
+        .navbar {
+            background-color: #9b5c8f;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 140px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #6c757d;
+            margin-bottom: 40px;
+        }
+
+        .ip-box {
+            display: column;
+            min-width: 260px;
+            padding: 20px 40px;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #9b5c8f;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .btn {
+            padding: 15px 40px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            background-color: #9b5c8f;
+            color: #ffffff;
+        }
+
+        .btn:hover {
+            background-color: #7f4a75;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#">WEB-T by Shegidevich Darya</a>
+        <a href="web_t.html">Home</a>
+    </div>
+
+    <div class="container">
+        <h1>IP Address</h1>
+        <div class="subtitle">Нажмите кнопку, чтобы узнать ваш IP</div>
+
+        <div id="ip" class="ip-box"></div>
+
+        <button class="btn" onclick="getIP()">Узнать IP адрес</button>
+    </div>
+
+    <script>
+        function getIP() {
+            const ipField = document.getElementById('ip');
+            ipField.textContent = 'Загрузка...';
+
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    ipField.textContent = data.ip;
+                })
+                .catch(() => {
+                    ipField.textContent = 'Ошибка получения IP';
+                });
+        }
+    </script>
+
+</body>
+</html>
+

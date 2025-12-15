@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Counter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffd6ec;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #9b5c8f;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 140px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 44px;
+            margin-bottom: 40px;
+            color: #530056;
+        }
+
+        .counter {
+            font-size: 72px;
+            font-weight: bold;
+            margin-bottom: 50px;
+            color: #5b004a;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .btn {
+            width: 120px;
+            height: 70px;
+            font-size: 28px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            background-color: #300024;
+            color: #ffffff;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .btn.minus {
+            box-shadow: 0 0 0 4px #74155d;
+        }
+
+        .btn {
+            box-shadow: 0 0 0 4px #74155d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#">WEB-T by Shegidevich Darya</a>
+        <a href="web_t.html">Home</a>
+    </div>
+
+    <div class="container">
+        <h1>Simple Counter</h1>
+
+        <div id="counter" class="counter">0</div>
+
+        <div class="buttons">
+            <button class="btn" onclick="changeCounter(1)">+1</button>
+            <button class="btn minus" onclick="changeCounter(-1)">-1</button>
+        </div>
+    </div>
+
+    <script>
+        let count = 0;
+
+        function changeCounter(value) {
+            count += value;
+            document.getElementById('counter').textContent = count;
+        }
+    </script>
+
+</body>
+</html>
